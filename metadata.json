@@ -1,0 +1,8 @@
+{
+  "name": "LuxeDrive",
+  "description": "The ultimate cinematic luxury car marketplace for browsing, buying, and selling multi-million dollar hypercars, supercars, and premium vehicles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

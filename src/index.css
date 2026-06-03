@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Luxury Custom Sheen & Scrolling styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Stroke & Outline Typo for bold headers */
+.stroke-text {
+  -webkit-text-stroke: 1px #D4AF37;
+  color: transparent;
+}
+
+.stroke-text-white {
+  -webkit-text-stroke: 1px #E5E4E2;
+  color: transparent;
+}
+
+/* Animations for Luxury Glow effects */
+@keyframes luxuryGlow {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(212, 175, 55, 0.1), 0 0 12px rgba(212, 175, 55, 0.05);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.35), 0 0 24px rgba(212, 175, 55, 0.15);
+  }
+}
+
+.lux-text-glow {
+  animation: luxuryGlow 4s infinite ease-in-out;
+}
+
+/* Base custom interactive styles */
+input[type="range"] {
+  outline: none;
+}
+
+/* Dynamic slide animation */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-slide {
+  animation: slideUpFade 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
